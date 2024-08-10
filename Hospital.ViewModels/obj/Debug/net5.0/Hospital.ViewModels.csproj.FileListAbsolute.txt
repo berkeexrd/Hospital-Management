@@ -1,0 +1,5 @@
+C:\Users\Asus\source\repos\Hospital\Hospital.ViewModels\obj\Debug\net5.0\Hospital.ViewModels.csproj.AssemblyReference.cache
+C:\Users\Asus\source\repos\Hospital\Hospital.ViewModels\obj\Debug\net5.0\Hospital.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\source\repos\Hospital\Hospital.ViewModels\obj\Debug\net5.0\Hospital.ViewModels.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\Hospital\Hospital.ViewModels\obj\Debug\net5.0\Hospital.ViewModels.AssemblyInfo.cs
+C:\Users\Asus\source\repos\Hospital\Hospital.ViewModels\obj\Debug\net5.0\Hospital.ViewModels.csproj.CoreCompileInputs.cache

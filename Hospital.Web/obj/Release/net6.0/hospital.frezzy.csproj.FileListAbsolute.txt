@@ -1,0 +1,12 @@
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Web\obj\Release\net6.0\hospital.frezzy.csproj.AssemblyReference.cache
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Web\obj\Release\net6.0\hospital.frezzy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Web\obj\Release\net6.0\hospital.frezzy.AssemblyInfoInputs.cache
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Web\obj\Release\net6.0\hospital.frezzy.AssemblyInfo.cs
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Web\obj\Release\net6.0\hospital.frezzy.csproj.CoreCompileInputs.cache
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Web\obj\Release\net6.0\hospital.frezzy.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Web\obj\Release\net6.0\hospital.frezzy.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Web\obj\Release\net6.0\hospital.frezzy.RazorAssemblyInfo.cache
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Web\obj\Release\net6.0\hospital.frezzy.RazorAssemblyInfo.cs
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Web\obj\Release\net6.0\hospital.frezzy.dll
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Web\obj\Release\net6.0\refint\hospital.frezzy.dll
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Web\obj\Release\net6.0\hospital.frezzy.pdb

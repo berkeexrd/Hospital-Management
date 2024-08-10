@@ -1,0 +1,59 @@
+﻿@model Hospital.ViewModels.PatientsViewModel
+
+@{
+    ViewData["Title"] = "AllAppointment";
+}
+<div class="container">
+    <form asp-action="AllAppointment" method="post">
+    <div class="form-group">
+        <label asp-for="SelectedDate" class="control-label"></label>
+        <input type="date" asp-for="SelectedDate" class="form-control" />
+        <span asp-validation-for="SelectedDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Search" class="btn btn-primary" />
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Patient Name</th>
+                <th>appointment Date</th>
+                <th>Appointment Time</th>
+                <th>Status</th>
+</tr>
+        @if(Model.Appointments!=null)
+        {
+            @foreach (var item in Model.Appointments)
+                    {
+                        <tr>
+                            <td>
+                                @item.Patient.Name
+                            </td>
+                            <td>
+                                @item.CreatedDate
+                            </td>
+                            <td>
+                                @item.AppointmentTime
+                            </td>
+                            <td>
+                                @item.AppointsStatus
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new {  id=item.Id }) |                              
+                                @Html.ActionLink("Delete", "Delete", new {  id=item.Id})
+                             </td>
+                        </tr>
+
+                    }
+           
+        }
+            </table>
+    </div>
+</form>
+</div>
+
+
+
+
+
+

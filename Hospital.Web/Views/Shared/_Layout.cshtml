@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Hospital.Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Hospital.Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Hospital.Web</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <div class="dropdown">
+                        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home Controller
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li class="nav-item">
+                                <a class="dropdown-item" asp-area="Patient" asp-controller="Home" asp-action="AllDoctors">AllDoctors</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hospital
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li class="nav-item">
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="Hospitals" asp-action="Index">Hospital</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" asp-area="admin" asp-controller="Rooms" asp-action="Index">Rooms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" asp-area="admin" asp-controller="Contacts" asp-action="Index">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Users
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li class="nav-item">
+                                <a class="dropdown-item" asp-area="admin" asp-controller="Users" asp-action="Index">Users</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" asp-area="admin" asp-controller="Users" asp-action="AllDoctors">DoctorsList</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Doctor
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li class="nav-item">
+                                <a class="dropdown-item" asp-area="Doctor" asp-controller="Doctors" asp-action="AddOPDTiming">AddOPDTiming</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" asp-area="Doctor" asp-controller="Doctors" asp-action="OPDStatus">OPDStatus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" asp-area="Doctor" asp-controller="Doctors" asp-action="AllAppointments">AllAppointments</a>
+                            </li>
+                        </ul>
+                    </div>
+                 
+                    <ul class="navbar-nav flex-grow-1">
+                      
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="admin" asp-controller="Suppliers" asp-action="Index">Supplier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/DoctorRegister">DoctorRegister</a>
+                        </li>
+                       @* <li class="nav-item">
+                            <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">patientRegister</a>
+                        </li>*@
+                    </ul>
+                    <partial name="_LoginPartial"/>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   @* <footer class="border-top footer text-muted">
+       <div class="container">
+            &copy; 2022 - Hospital.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

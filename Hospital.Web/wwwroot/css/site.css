@@ -1,0 +1,161 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+
+.height {
+    height: 100vh;
+}
+
+.card {
+    width: 350px;
+    height: 370px;
+}
+
+.image {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+
+.main-heading {
+    font-size: 40px;
+    color: red !important;
+}
+
+.ratings i {
+    color: orange;
+}
+
+.user-ratings h6 {
+    margin-top: 2px;
+}
+
+.colors {
+    display: flex;
+    margin-top: 2px;
+}
+
+    .colors span {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        margin-right: 6px;
+    }
+
+        .colors span:nth-child(1) {
+            background-color: red;
+        }
+
+        .colors span:nth-child(2) {
+            background-color: blue;
+        }
+
+        .colors span:nth-child(3) {
+            background-color: yellow;
+        }
+
+        .colors span:nth-child(4) {
+            background-color: purple;
+        }
+
+.btn-danger {
+    height: 48px;
+    font-size: 18px;
+}
+
+
+body {
+    margin: 0;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.5385;
+    color: #333;
+    text-align: left;
+    background-color: #2196F3;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .1875rem;
+}
+
+.card-img-actions {
+    position: relative;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.card-img {
+    width: 350px;
+}
+
+.star {
+    color: red;
+}
+
+.bg-cart {
+    background-color: orange;
+    color: #fff;
+}
+
+    .bg-cart:hover {
+        color: #fff;
+    }
+
+.bg-buy {
+    background-color: green;
+    color: #fff;
+    padding-right: 29px;
+}
+
+    .bg-buy:hover {
+        color: #fff;
+    }
+
+a {
+    text-decoration: none !important;
+}

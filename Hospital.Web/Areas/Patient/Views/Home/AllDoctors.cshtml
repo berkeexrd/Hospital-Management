@@ -1,0 +1,80 @@
+﻿@using hospitals.Utilities
+@model PagedResult<Hospital.ViewModels.ApplicationUserViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<form>
+    
+
+                <div class="container">
+
+                    <div class="row">
+
+
+    @foreach (var item in Model.Data) {
+  
+        <div class="col-md-4 mt-2">
+
+           
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-img-actions">
+
+                        <img src="~/Images/@item.PictureUrl" class="card-img" width="96" height="350" alt="image"/>
+
+
+                    </div>
+                </div>
+
+                <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2">
+                                    <a href="#" class="text-default mb-2" data-abc="true">@item.Name</a>
+                        </h6>
+
+                                <a href="#" class="text-muted" data-abc="true">@item.Specialist</a>
+                    </div>
+
+                    <h3 class="mb-0 font-weight-semibold">@item.Email</h3>
+
+                    
+
+                                         <div class="text-muted mb-3">@item.City</div>
+
+
+
+                                        <a asp-action="CreateAppointment" asp-area="Patient" asp-route-doctorId="@item.Id" asp-controller="Appointment" class="btn btn-primary">
+                                            Book Appointment
+                                      </a>
+                   
+
+
+                </div>
+                </div>
+                </div>
+               
+
+}
+</div>
+</div>
+
+        
+
+    
+</form>
+
+
+<cs-pager cs-paging-pagesize=(int)Model.PageSize
+          cs-paging-pagenumber=(int)Model.PageNumber
+          cs-paging-totalitems=(int)Model.TotalItems
+          cs-pagenumber-param="pageNumber"
+          asp-controller="home"
+         
+          asp-action="alldoctors"          
+          cs-pager-li-current-class="page-item active"
+          cs-pager-li-other-class="page-item"
+          cs-pager-li-non-active-class="page-item disabled"
+          cs-pager-link-current-class="page-link"
+          cs-pager-link-other-class="page-link">
+      </cs-pager>

@@ -1,0 +1,39 @@
+﻿@using Hospital.Models
+@model Hospital.ViewModels.TimingViewModel
+<form asp-action="AddOPDTiming">
+    <div>
+        <input type="hidden" asp-for='ScheduleDate'/>
+    </div>
+
+     <div class="form-floating">
+         <select asp-for="Status" asp-items="@Html.GetEnumSelectList<Status>()" class="form-control" ></select>
+         <label asp-for="Status"></label>
+         <span asp-validation-for="Status" class="text-danger"></span>
+      </div>
+    <div class="form-group">
+        <label asp-for="Duration" class="control-label"></label>
+        <input asp-for="Duration" class="form-control" />
+        <span asp-validation-for="Duration" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MorningShiftStartTime"></label>
+        <select asp-for="MorningShiftStartTime" asp-items="@ViewBag.morningStart"></select>
+       </div>
+       <div>
+        <label asp-for="MorningShiftEndTime"></label>
+        <select asp-for="MorningShiftEndTime" asp-items="@ViewBag.morningEnd"></select>
+       </div>
+    <div class ="form-group">
+        <label asp-for="AfternoonShiftStartTime"></label>
+        <select asp-for="AfternoonShiftStartTime" asp-items="@ViewBag.evenStart"></select>
+       </div>
+    <div class="form-group">
+        <label asp-for="AfternoonShiftEndTime"></label>
+        <select asp-for="AfternoonShiftEndTime" asp-items="@ViewBag.evenEnd"></select>
+       </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+
+  @* // <input type="submit" value="submit" />*@
+</form>

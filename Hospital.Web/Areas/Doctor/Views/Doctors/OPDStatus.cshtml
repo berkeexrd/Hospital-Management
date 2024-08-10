@@ -1,0 +1,81 @@
+﻿@using hospitals.Utilities
+@model PagedResult<Hospital.ViewModels.TimingViewModel>
+
+@{
+    ViewData["Title"] = "AllOPDIndex";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Id
+            </th>
+            <th>
+               ScheduleDate
+            </th>
+            <th>
+               MorningShiftStartTime
+            </th>
+            <th>
+                MorningShiftEndTime
+            </th>
+            <th>
+              AfternoonShiftStartTime
+            </th>
+            <th>
+               AfternoonShiftEndTime
+            </th>
+            <th>
+                Duration
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                DoctorId
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Data) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                    <label asp-for=@item.ScheduleDate/>@item.ScheduleDate
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MorningShiftStartTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MorningShiftEndTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AfternoonShiftStartTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AfternoonShiftEndTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoctorId)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey*/  }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.Id})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,12 @@
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Models\bin\Release\net6.0\Hospital.Models.deps.json
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Models\bin\Release\net6.0\Hospital.Models.dll
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Models\bin\Release\net6.0\Hospital.Models.pdb
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Models\obj\Release\net6.0\Hospital.Models.csproj.AssemblyReference.cache
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Models\obj\Release\net6.0\Hospital.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Models\obj\Release\net6.0\Hospital.Models.AssemblyInfoInputs.cache
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Models\obj\Release\net6.0\Hospital.Models.AssemblyInfo.cs
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Models\obj\Release\net6.0\Hospital.Models.csproj.CoreCompileInputs.cache
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Models\obj\Release\net6.0\Hospital.Models.dll
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Models\obj\Release\net6.0\refint\Hospital.Models.dll
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Models\obj\Release\net6.0\Hospital.Models.pdb
+C:\Users\Frezzy\Desktop\Hospital\Hospital.Models\obj\Release\net6.0\ref\Hospital.Models.dll
